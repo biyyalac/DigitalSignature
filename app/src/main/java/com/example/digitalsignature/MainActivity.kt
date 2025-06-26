@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    SignatureCaptureScreen()
+    SignatureApp()
 }
 
 @Preview(showBackground = true)
@@ -59,6 +59,13 @@ fun GreetingPreview25() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview256() {
+    DigitalSignatureTheme {
+        Greeting("Android")
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview__2() {
     DigitalSignatureTheme {
         Greeting("Android")
     }
