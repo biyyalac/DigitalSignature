@@ -42,3 +42,24 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview2() {
+    DigitalSignatureTheme {
+        Greeting("Android")
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview25() {
+    DigitalSignatureTheme {
+        Greeting("Android")
+        }
+}
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview256() {
+    DigitalSignatureTheme {
+        Greeting("Android")
+    }
+}

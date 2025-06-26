@@ -81,9 +81,12 @@ fun SignatureCaptureScreen() {
                             path.lineTo(change.position.x, change.position.y)
 
                             Log.e("Test Drawing ","Drawing")
+                            Log.e("Test Drawing ","Drawing")
                             path = Path().apply {
                                 addPath(path)
-                            }                            // Create a new Path object that is a copy of the updated path.
+                            }
+
+                        // Create a new Path object that is a copy of the updated path.
                             // This is necessary to trigger a recomposition.
 
                         }
@@ -135,7 +138,7 @@ fun SignatureCaptureScreen() {
                     // Draw the path onto the bitmap's canvas
                     canvas.drawPath(path.asAndroidPath(), Paint().apply {
                         color = android.graphics.Color.BLACK
-                        strokeWidth = 5f
+                        strokeWidth = 3f
                         style = Paint.Style.STROKE
                         strokeJoin = Paint.Join.ROUND
                         strokeCap = Paint.Cap.ROUND
@@ -150,7 +153,7 @@ fun SignatureCaptureScreen() {
         // Display the captured signature
         if (signatureBitmap != null) {
             Text(
-                text = "Captured Signature:",
+                text = "Captured Signature: ",
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier.padding(top = 24.dp, bottom = 8.dp)
             )
@@ -169,6 +172,23 @@ fun SignatureCaptureScreen() {
 @Preview(showBackground = true)
 @Composable
 private fun SignatureCaptureScreenPreview() {
+
+    DigitalSignatureTheme {
+        SignatureCaptureScreen()
+    }
+
+    DigitalSignatureTheme {
+        SignatureCaptureScreen()
+    }
+
+    DigitalSignatureTheme {
+        SignatureCaptureScreen()
+    }
+
+    DigitalSignatureTheme {
+        SignatureCaptureScreen()
+    }
+
     DigitalSignatureTheme {
         SignatureCaptureScreen()
     }
@@ -177,6 +197,13 @@ private fun SignatureCaptureScreenPreview() {
 @Preview(showBackground = true)
 @Composable
 private fun SignatureCaptureScreenPreview3() {
+    DigitalSignatureTheme {
+        SignatureCaptureScreen()
+    }
+}
+@Preview(showBackground = true)
+@Composable
+private fun SignatureCaptureScreenPreview33() {
     DigitalSignatureTheme {
         SignatureCaptureScreen()
     }
