@@ -201,9 +201,26 @@ private fun SignatureCaptureScreenPreview3() {
         SignatureCaptureScreen()
     }
 }
+
 @Preview(showBackground = true)
 @Composable
 private fun SignatureCaptureScreenPreview33() {
+    DigitalSignatureTheme {
+        SignatureCaptureScreen()
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun SignatureCaptureScreenPreview333() {
+    DigitalSignatureTheme {
+        SignatureCaptureScreen()
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun SignatureCaptureScreenPreview3333() {
     DigitalSignatureTheme {
         SignatureCaptureScreen()
     }
