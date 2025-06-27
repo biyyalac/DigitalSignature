@@ -63,7 +63,7 @@ fun SignatureApp() {
     }
 }
 
-@Preview
+@Preview(device = "spec:width=1080px,height=2340px,dpi=440")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SignatureAppPreview() {
