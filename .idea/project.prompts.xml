@@ -15,7 +15,12 @@
         <PromptTemplate>
           <option name="enabled" value="true" />
           <option name="name" value="jUnit Test Case Prompt" />
-          <option name="text" value="Write a unit test case for this $SELECTION method using mockito library" />
+          <option name="text" value="Write a required Junit test cases for this $CURRENT_FILE Using mockito library." />
+        </PromptTemplate>
+        <PromptTemplate>
+          <option name="enabled" value="true" />
+          <option name="name" value="Null Pointer Exception" />
+          <option name="text" value="Getting null Pointer Exception. Provide me the reason and the possible solution in the below format.&#10;&#10;Reason of getting null pointer Exception:&#10;*{Reason}&#10;Solution :&#10;*{Solution}&#10;" />
         </PromptTemplate>
       </list>
     </option>
