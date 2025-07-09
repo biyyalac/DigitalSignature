@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PromptTemplates">
+    <option name="builtInPromptOverrides">
+      <list>
+        <BuiltInPromptOverride>
+          <option name="groupId" value="rules" />
+          <option name="promptId" value="project" />
+          <option name="text" value="Always follow Solid principles." />
+        </BuiltInPromptOverride>
+      </list>
+    </option>
+    <option name="prompts">
+      <list>
+        <PromptTemplate>
+          <option name="enabled" value="true" />
+          <option name="name" value="jUnit Test Case Prompt" />
+          <option name="text" value="Write a required Junit test cases for this $CURRENT_FILE Using mockito library." />
+        </PromptTemplate>
+        <PromptTemplate>
+          <option name="enabled" value="true" />
+          <option name="name" value="Null Pointer Exception" />
+          <option name="text" value="Getting null Pointer Exception. Provide me the reason and the possible solution in the below format.&#10;&#10;Reason of getting null pointer Exception:&#10;*{Reason}&#10;Solution :&#10;*{Solution}&#10;" />
+        </PromptTemplate>
+      </list>
+    </option>
+  </component>
+</project>
